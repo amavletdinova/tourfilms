@@ -23,7 +23,7 @@
     function createList(){
         for (let i = 0; i < items.length; i++) {
             document.getElementById("answerList").innerHTML +=
-                `<li class="list-group"
+                `<li class="list-group-item"
 onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>`;
         }
     }
@@ -75,9 +75,11 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
     }
             frameCommunicationInit();
             
-<ul class="list-group" id="answerList">
+<p>
+    <ul class="list-group-item" id="answerList">
 
-</ul>
+    </ul> 
+</p>
 
 </body>
 
