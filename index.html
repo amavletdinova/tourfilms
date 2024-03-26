@@ -1,22 +1,30 @@
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
 </head>
 <body>
-    <script type="text/javascript">
-     $(document).ready(function(){
+<p>Список ответов</p>
+<ul class="list-group" id="answerList">
+
+</ul>
+
+</body>
+<script type="text/javascript">
+
+    $(document).ready(function(){
         createList();
     });
     const items=[
         {
-            message:"Тест",
-            title:"1"
+            message:'Список наших складов',
+            title:'Список наших складов'
         },
         {
-            message: '…, добрый день✨ Меня зовут Таня - я являюсь менеджером проекта @tourfilms, очень рада знакомству с вами и отвечу на любой вопрос, который вас заинтересует🥰 Направляю подробности программы тура для вас👇',
-            title: 'Приветствие'
+            message: 'Здравствуйте, приветствую вас',
+            title: 'приветствую'
         }
     ]
 
@@ -49,6 +57,7 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
             });
         }
     }
+    // функция отправки данных в основное окно
     function frameCommunicationSend(data)
     {
         data['uniqueLoadId'] = frameCommunication.uniqueLoadId;
@@ -73,15 +82,7 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
             }
         }
     }
-            frameCommunicationInit();
-            
-<p>
-    <ul class="list-group-item" id="answerList">
-
-    </ul> 
-</p>
-
-</body>
+    frameCommunicationInit();
 
 </script>
 </html>
