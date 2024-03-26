@@ -5,6 +5,7 @@
 
 </head>
 <body>
+    <script type="text/javascript">
      $(document).ready(function(){
         createList();
     });
@@ -72,15 +73,13 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
             }
         }
     }
+            frameCommunicationInit();
+            
 <ul class="list-group" id="answerList">
 
 </ul>
 
 </body>
-<script type="text/javascript">
-
-   
-    frameCommunicationInit();
 
 </script>
 </html>
