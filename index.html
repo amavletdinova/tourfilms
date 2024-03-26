@@ -5,14 +5,7 @@
 
 </head>
 <body>
-<ul class="list-group" id="answerList">
-
-</ul>
-
-</body>
-<script type="text/javascript">
-
-    $(document).ready(function(){
+     $(document).ready(function(){
         createList();
     });
     const items=[
@@ -55,7 +48,6 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
             });
         }
     }
-    // функция отправки данных в основное окно
     function frameCommunicationSend(data)
     {
         data['uniqueLoadId'] = frameCommunication.uniqueLoadId;
@@ -80,6 +72,14 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
             }
         }
     }
+<ul class="list-group" id="answerList">
+
+</ul>
+
+</body>
+<script type="text/javascript">
+
+   
     frameCommunicationInit();
 
 </script>
