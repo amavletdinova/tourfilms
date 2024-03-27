@@ -14,7 +14,7 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function(){
+   $(document).ready(function(){
         createList();
     });
     const items=[
@@ -26,8 +26,8 @@
             message: 'Здравствуйте, приветствую вас',
             title: 'приветствую'
         }
-    ]
-	console.log(items)
+    ];
+	console.log(items);
     function createList(){
         for (let i = 0; i < items.length; i++) {
             document.getElementById("answerList").innerHTML +=
@@ -60,7 +60,7 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
     // функция отправки данных в основное окно
     function frameCommunicationSend(data)
     {
-        data['uniqueLoadId'] = frameCommunication.uniqueLoadId;
+        data.uniqueLoadId = frameCommunication.uniqueLoadId;
         var encodedData = JSON.stringify(data);
         if (!frameCommunication.postMessageOrigin)
         {
@@ -83,7 +83,6 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
         }
     }
     frameCommunicationInit();
-   
 </script>
 </body>
 </html>
