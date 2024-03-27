@@ -14,9 +14,8 @@
 
 
 <script type="text/javascript">
-   $(document).ready(function(){
-        createList();
-    });
+  function createList() 
+	{
     const items=[
         {
             message:"Список наших складов",
@@ -35,6 +34,7 @@
 onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>`;
         }
     }
+}
 
     function frameCommunicationInit()
     {
