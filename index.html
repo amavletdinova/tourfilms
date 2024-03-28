@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<p>Список ответов1</p>
+<p>Список ответов</p>
 <ul class="list-group" id="answerList">
 
 </ul>
@@ -32,7 +32,7 @@
         for (let i = 0; i < items.length; i++) {
             document.getElementById("answerList").innerHTML +=
                 `<li class="list-group-item"
-onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})"</li>`;
+onclick="frameCommunicationSend({'action': 'send', 'message': '${items[1].message}'})"></li>`;
         }
     }
 
