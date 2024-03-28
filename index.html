@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<p>Список ответов</p>
+<p>Список ответов1</p>
 <ul class="list-group" id="answerList">
 
 </ul>
@@ -31,8 +31,8 @@
     function createList(){
         for (let i = 0; i < items.length; i++) {
             document.getElementById("answerList").innerHTML +=
-                `<li class="list-group-item"
-onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>`;
+                <li class="list-group-item"
+onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>;
         }
     }
 
@@ -82,21 +82,8 @@ onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].messag
             }
         }
     }
-    function createList(){
-        for (let i = 0; i < items.length; i++) {
-            document.getElementById("answerList").innerHTML +=
-                `<li class="list-group-item"
-onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>`;
-        }
-    }
     frameCommunicationInit();
-    function createList(){
-        for (let i = 0; i < items.length; i++) {
-            document.getElementById("answerList").innerHTML +=
-                `<li class="list-group-item"
-onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>`;
-        }
-    }
+    
 
 </script>
 </html>
