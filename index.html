@@ -28,7 +28,7 @@
   
   switch(selectedValue) {
     case 'js':
-      onclick="frameCommunicationSend({'action': 'send', 'message': 'Send message'})"
+     document.getElementById('#list').onclick = frameCommunicationSend({'action': 'send', 'message': 'Send message'})
       break;
     case 'php':
       frameCommunicationSend({'action': 'send', 'message': 'Send message'});
