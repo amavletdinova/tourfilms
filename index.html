@@ -8,34 +8,48 @@
 </head>
 <body>
 <p>Список ответов1</p>
-<ul class="list-group" id="answerList">
-
-</ul>
+<select id="list">
+  <option value="js">JavaScript</option>
+  <option value="php">PHP</option>
+  <option value="c#">Csharp</option>
+  <option value="java">Java</option>
+  <option value="node">Node.js</option>
+</select>
 
 </body>
 <script type="text/javascript">
 
     $(document).ready(function(){
-        createList();
+        getSelectValue();
     });
-    const items=[
-        {
-            message:'Список наших складов',
-            title:'Список наших складов'
-        },
-        {
-            message: 'Здравствуйте, приветствую вас',
-            title: 'приветствую'
-        }
-    ]
 
-    function createList(){
-        for (let i = 0; i < items.length; i++) {
-            document.getElementById("answerList").innerHTML +=
-                `<li class="list-group-item"
-onclick="frameCommunicationSend({'action': 'send', 'message': '${items[i].message}'})">${items[i].title}</li>`;
-        }
-    }
+    function getSelectValue(e){
+  let selectedValue = e.target.value;
+  
+  switch(selectedValue) {
+    case 'js':
+      frameCommunicationSend({'action': 'send', 'message': 'Send message'});
+      break;
+    case 'php':
+      frameCommunicationSend({'action': 'send', 'message': 'Send message'});
+      break;
+    case 'c#':
+      frameCommunicationSend({'action': 'send', 'message': 'Send message'});
+      break;
+    case 'java':
+      frameCommunicationSend({'action': 'send', 'message': 'Send message'});
+      break;
+    case 'node':
+      frameCommunicationSend({'action': 'send', 'message': 'Send message'});
+      break;
+  }
+}
+
+const list = document.querySelector('#list');
+
+list.addEventListener('change', function(e) {  
+  getSelectValue(e)
+});
 
     function frameCommunicationInit()
     {
