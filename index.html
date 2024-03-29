@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<p>Список ответов</p>
+<p>Список ответов1</p>
 <select id="list">
   <option value="js">JavaScript</option>
   <option value="php">PHP</option>
@@ -28,7 +28,7 @@
   
   switch(selectedValue) {
     case 'js':
-      frameCommunicationSend({'action': 'send', 'message': 'Send message'});
+      onclick="frameCommunicationSend({'action': 'send', 'message': 'Send message'})"
       break;
     case 'php':
       frameCommunicationSend({'action': 'send', 'message': 'Send message'});
