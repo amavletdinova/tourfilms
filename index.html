@@ -8,7 +8,7 @@
 </head>
 <body>
 <select id="list">
-  <option value="1">Общие скрипты</option>
+  <option value="1">Общие скрипты1</option>
   <option value="2">Приветствие</option>
   <option value="3">Предоплата (Софья)</option>
   <option value="4">Предоплата (Мария)</option>
@@ -33,6 +33,7 @@
   
   switch(selectedValue) {
     case '1':
+      frameCommunicationSend({'action': 'put', 'message': `привет`})
       break;
     case '2':
       frameCommunicationSend({'action': 'put', 'message': `…, добрый день✨
