@@ -25,7 +25,14 @@
   <option value="15">Скидка от travel insider</option>
   <option value="16">Рассрочка</option>
 </select>
-    
+<p></p>
+<p>Ответы по направлениям</p>
+<select id="meropriatia">
+  <option value="1">Мероприятия</option>
+  <option value="2">Мафия</option>
+  <option value="3">Муз.интуиция</option>
+</select>
+<p></p>
 <select id="dagestan">
   <option value="1">Дагестан</option>
   <option value="2">Программа тура</option>
@@ -33,6 +40,112 @@
   <option value="4">Детальный маршрут по дням</option>
   <option value="5">Какой аэропорт и время</option> 
 </select>
+<p></p>
+<select id="big">
+  <option value="1">Дагестан Биг</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="treking">
+  <option value="1">Трекинг</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="arktika">
+  <option value="1">Арктика</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="osetia">
+  <option value="1">Осетия</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="elbrus">
+  <option value="1">Эльбрус</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="gruzia">
+  <option value="1">Грузия</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="armenia">
+  <option value="1">Армения</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="kamchatka">
+  <option value="1">Камчатка</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="altai">
+  <option value="1">Алтай</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="uzbekistan">
+  <option value="1">Узбекистан</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="kirgizstan">
+  <option value="1">Кыргызстан</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="italia">
+  <option value="1">Италия</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+<p></p>
+<select id="iordania">
+  <option value="1">Иордания</option>
+  <option value="2">Программа тура</option>
+  <option value="3">Что включено</option>
+  <option value="4">Детальный маршрут по дням</option>
+  <option value="5">Какой аэропорт и время</option> 
+</select>
+
+
 </body>
 <script type="text/javascript">
     function getSelectValue(e){
@@ -194,6 +307,58 @@
 }
 
 const list = document.querySelector('#list');
+
+list.addEventListener('change', function(e) {  
+  getSelectValue(e)
+});
+
+    function getSelectValue(e){
+  let selectedValue = e.target.value;
+  
+  switch(selectedValue) {
+    case '1':
+      frameCommunicationSend({'action': 'put', 'message': 'привет'})
+      break;
+    case '2':
+      frameCommunicationSend({'action': 'put', 'message': `Наша любимая «Мафия» 😎
+
+🗓️ 2 марта 
+📍м. Лубянка, «Шпатен Гранд», Большая Лубянка д.5  
+🕗19:00
+
+- Проведем вечер вместе 
+- Узнаем друг друга с неожиданной стороны
+- Заведем новые знакомства
+
+💰1.500₽ - 10 мест 
+
+Приглашаем на игру, будем рады видеть 😉
+
+Дресс-код 2000-е 💅
+
+Отправляй в ответ «хочу забронировать» и мы отправим все условия для бронирования места, до встречи 👋`});
+      break;
+    case '3':
+      frameCommunicationSend({'action': 'put', 'message': `В день всех влюбленных 💕сделаем Tinder-встречу и поиграем в угадай мелодию  🎶
+
+Это отличный шанс найти себе человечка с такими же интересами и увлечениями 😉
+
+🗓️ 14 февраля 
+начало игры в 20:45  приветственный фуршет с 19:30 
+
+📍м. Бауманская, ул. Фридриха Энгельса, 46
+
+💰3.000₽ ( фуршет включен) 
+
+Дресс-код «red» 💃🏻 
+Добавь в свой образ что-то красное 👠
+
+Будем классно проводить время, зажигать и проверять ваши познания в мире музыки 🔥`});
+      break;
+  }
+}
+
+const meropriatia = document.querySelector('#meropriatia');
 
 list.addEventListener('change', function(e) {  
   getSelectValue(e)
