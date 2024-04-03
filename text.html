@@ -8,7 +8,7 @@
 </head>
 <body>
 <select id="list">
-  <option value="1">Общие скрипты1</option>
+  <option value="1">Общие скрипты</option>
   <option value="2">Приветствие</option>
   <option value="3">Переводы Соня</option>
   <option value="4">Переводы Маша</option>
@@ -123,11 +123,11 @@
 <select id="iordania">
   <option value="1">Иордания</option>
 </select>
-<select id="gruzia_rozhdestvo">
+<select id="gruziarozhdestvo">
   <option value="1">Грузия рождество</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="gruzia_stambul_ng">
+<select id="gruziastambulng">
   <option value="1">Грузия+Стамбул нг</option>
   <option value="2">Программа тура</option>
 </select>
@@ -135,19 +135,19 @@
   <option value="1">Байкал</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="stambul_ng">
+<select id="stambulng">
   <option value="1">Стамбул нг</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="karelia_ng">
+<select id="kareliang">
   <option value="1">Карелия нг</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="arhiz_katka">
+<select id="arhizkatka">
   <option value="1">Архыз катка</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="shri_lanka">
+<select id="shrilanka">
   <option value="1">Шри-Ланка</option>
   <option value="2">Программа тура</option>
 </select>
@@ -155,7 +155,7 @@
   <option value="1">Бали</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="bali_ng">
+<select id="baling">
   <option value="1">Бали нг</option>
   <option value="2">Программа тура</option>
 </select>
@@ -163,11 +163,11 @@
   <option value="1">ЮАР</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="karelia_osen">
+<select id="kareliaosen">
   <option value="1">Карелия осень</option>
   <option value="2">Программа тура</option>
 </select>
-<select id="karelia_zima">
+<select id="kareliazima">
   <option value="1">Карелия зима</option>
   <option value="2">Программа тура</option>
 </select>
@@ -180,7 +180,7 @@
   
   switch(selectedValue) {
     case '1':
-      frameCommunicationSend({'action': 'put', 'message': '`привет`'});
+      frameCommunicationSend({'action': 'put', 'message': `привет`});
       break;
     case '2':
       frameCommunicationSend({'action': 'put', 'message': `…, добрый день✨
@@ -1154,9 +1154,9 @@ https://tourfilms.tilda.ws/georgia2024
       break;
   }
 }
-const gruzia_rozhdestvo = document.querySelector('#gruzia_rozhdestvo');
+const gruziarozhdestvo = document.querySelector('#gruziarozhdestvo');
 
-gruzia_rozhdestvo.addEventListener('change', function(e) {  
+gruziarozhdestvo.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1189,9 +1189,9 @@ https://tourfilms.ru/georgiastambul"
       break;
   }
 }
-const gruzia_stambul_ng = document.querySelector('#gruzia_stambul_ng');
+const gruziastambulng = document.querySelector('#gruziastambulng');
 
-gruzia_stambul_ng.addEventListener('change', function(e) {  
+gruziastambulng.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1267,9 +1267,9 @@ https://tourfilms.ru/stambulng"
       break;
   }
 }
-const stambul_ng = document.querySelector('#stambul_ng');
+const stambulng = document.querySelector('#stambulng');
 
-stambul_ng.addEventListener('change', function(e) {  
+stambulng.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1304,9 +1304,9 @@ https://tourfilms.ru/karelia2024"
       break;
   }
 }
-const karelia_ng = document.querySelector('#karelia_ng');
+const kareliang = document.querySelector('#kareliang');
 
-karelia_ng.addEventListener('change', function(e) {  
+kareliang.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1349,9 +1349,9 @@ https://tourfilms.ru/mountains"
       break;
   }
 }
-const arhiz_katka = document.querySelector('#arhiz_katka');
+const arhizkatka = document.querySelector('#arhizkatka');
 
-arhiz_katka.addEventListener('change', function(e) {  
+arhizkatka.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1386,9 +1386,9 @@ https://tourfilms.ru/lanka"
       break;
   }
 }
-const shri_lanka = document.querySelector('#shri_lanka');
+const shrilanka = document.querySelector('#shrilanka');
 
-shri_lanka.addEventListener('change', function(e) {  
+shrilanka.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1458,9 +1458,9 @@ https://tourfilms.tilda.ws/bali_new_year"
       break;
   }
 }
-const bali_ng = document.querySelector('#bali_ng');
+const baling = document.querySelector('#baling');
 
-bali_ng.addEventListener('change', function(e) {  
+baling.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1529,9 +1529,9 @@ http://tourfilms.ru/kareliagold"
       break;
   }
 }
-const karelia_osen = document.querySelector('#karelia_osen');
+const kareliaosen = document.querySelector('#kareliaosen');
 
-karelia_osen.addEventListener('change', function(e) {  
+kareliaosen.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 
@@ -1569,9 +1569,9 @@ http://tourfilms.ru/kareliasnow"
       break;
   }
 }
-const karelia_zima = document.querySelector('#karelia_zima');
+const kareliazima = document.querySelector('#kareliazima');
 
-karelia_zima.addEventListener('change', function(e) {  
+kareliazima.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
