@@ -350,16 +350,13 @@ const list = document.querySelector('#list');
 list.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
-
-    function getSelectValue(e){
-  let selectedValue = e.target.value;
-
         
       
 // Мероприятия\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  
 /*
 
-        
+  function getSelectValue(e){
+  let selectedValue = e.target.value;      
   switch(selectedValue) {
     case '1':
       frameCommunicationSend({'action': 'put', 'message': 'привет'});
