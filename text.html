@@ -8,7 +8,7 @@
 </head>
 <body>
 <select id="list">
-  <option value="1">Общие скрипты1</option>
+  <option value="1">Общие скрипты</option>
   <option value="2">Приветствие</option>
   <option value="3">Переводы Соня</option>
   <option value="4">Переводы Маша</option>
@@ -193,7 +193,7 @@
   
   switch(selectedValue) {
     case '1':
-      frameCommunicationSend({'action': 'put', 'message': `привет`});
+      frameCommunicationSend({'action': 'put', 'message': ``});
       break;
     case '2':
       frameCommunicationSend({'action': 'put', 'message': `…, добрый день✨
@@ -351,7 +351,7 @@ list.addEventListener('change', function(e) {
   getSelectValue(e)
 });
         
-      
+/*      
 // Мероприятия\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  
 
   function getSelectValue(e){
@@ -503,7 +503,7 @@ http://tourfilms.ru/dagestan
       frameCommunicationSend({'action': 'put', 'message': `Встречаемся в Махачкале до 11-11.30, обратно вылет после 21.00
 
 Билетики покупаем, когда набирается полная группа, об этом сообщим , за 1-1,5 недельки до начала тура добавляем чат в телеграмм , там как раз отправляем подборку билетов, какие лучше взять, гайд по одежде, и любые организационные вопросы к вашему организатору ☺️`});
-    break;
+          break;
   }
 }
 
@@ -597,7 +597,7 @@ const treking = document.querySelector('#treking');
 treking.addEventListener('change', function(e) {  
   getSelectValue(e)
 });
-/*
+
 
 
 
